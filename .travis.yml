@@ -4,7 +4,7 @@ services: docker
 
 env:
   global:
-    - ROLE_NAME: repo-epel
+    - ROLE_NAME: epel
   matrix:
     - MOLECULE_DISTRO: centos7
     - MOLECULE_DISTRO: centos6

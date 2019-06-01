@@ -1,4 +1,4 @@
-# Ansible Role: EPEL Repository
+# Ansible Role: EPEL
 
 [![Build Status](https://travis-ci.org/hwwilliams/ansible-role-repo-epel.svg?branch=master)](https://travis-ci.org/hwwilliams/ansible-role-repo-epel)
 
@@ -25,7 +25,7 @@ None.
 
     - hosts: servers
       roles:
-        - hwwilliams.repo-epel
+        - hwwilliams.epel
 
 ## License
 

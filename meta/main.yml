@@ -2,7 +2,8 @@
 dependencies: []
 
 galaxy_info:
-  author: geerlingguy
+  role_name: netdata
+  author: hwwilliams
   description: EPEL repository for RHEL/CentOS.
   company: "Midwestern Mac, LLC"
   license: "license (BSD, MIT)"

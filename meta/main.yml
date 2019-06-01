@@ -2,7 +2,6 @@
 dependencies: []
 
 galaxy_info:
-  role_name: repo-epel
   author: hwwilliams
   description: EPEL repository for RHEL/CentOS.
   license: license (MIT)

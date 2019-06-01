@@ -1,6 +1,6 @@
 # Ansible Role: EPEL
 
-[![Build Status](https://travis-ci.org/hwwilliams/ansible-role-repo-epel.svg?branch=master)](https://travis-ci.org/hwwilliams/ansible-role-repo-epel)
+[![Build Status](https://travis-ci.org/hwwilliams/ansible-role-epel.svg?branch=master)](https://travis-ci.org/hwwilliams/ansible-role-epel)
 
 Installs the [EPEL repository](https://fedoraproject.org/wiki/EPEL) (Extra Packages for Enterprise Linux) for RHEL/CentOS.
 

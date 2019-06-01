@@ -8,6 +8,7 @@
   yum:
     name: "{{ epel_repo_url }}"
     state: present
+    validate_certs: "{{ epel_validate_certs }}"
   register: result
   until: 'result.rc == 0'
   retries: 5

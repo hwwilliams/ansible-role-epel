@@ -2,7 +2,7 @@
 dependencies: []
 
 galaxy_info:
-  role_name: netdata
+  role_name: repo-epel
   author: hwwilliams
   description: EPEL repository for RHEL/CentOS.
   company: "Midwestern Mac, LLC"

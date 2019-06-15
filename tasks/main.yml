@@ -4,8 +4,8 @@
     path: "{{ epel_repofile_path }}"
   register: epel_repofile_result
   when:
-    - ansible_os_family == 'RedHat'
-    - not ansible_distribution == 'Fedora'
+    - ansible_os_family | lower == 'redhat'
+    - ansible_distribution | lower  == 'centos'
 
 - name: Import EPEL GPG key.
   rpm_key:
@@ -14,8 +14,8 @@
   ignore_errors: "{{ ansible_check_mode }}"
   when:
     - not epel_repofile_result.stat.exists | bool
-    - ansible_os_family == 'RedHat'
-    - not ansible_distribution == 'Fedora'
+    - ansible_os_family | lower  == 'redhat'
+    - ansible_distribution | lower  == 'centos'
 
 - name: Install EPEL repo.
   yum:
@@ -28,5 +28,5 @@
   delay: 10
   when:
     - not epel_repofile_result.stat.exists | bool
-    - ansible_os_family == 'RedHat'
-    - not ansible_distribution == 'Fedora'
+    - ansible_os_family | lower  == 'redhat'
+    - ansible_distribution | lower  == 'centos'
